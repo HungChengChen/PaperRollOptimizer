@@ -38,6 +38,8 @@ pip install pandas ortools argparse
 - `machine_specs.json`：設定機台的寬幅規格。
 - `order.xlsx`：設定訂單的英寸寬幅數量。
 - `stocks_width.xlsx`：設定庫存的英寸寬幅。
+- `cpu`：設定 CPU 核心數量(默認為 8)。
+- `max_time`：設定解決問題的時間限制(秒數，默認為 30 秒)。
 
 執行範例：
 
