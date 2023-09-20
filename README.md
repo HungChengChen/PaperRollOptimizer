@@ -24,9 +24,47 @@
 - 🔍 使用 `OR-Tools` 進行線性規劃，快速找到最佳裁剪策略。
 - 🖥️ `OR-Tools`：簡單安裝、使用方便，且完全開源。
 
-## 📥 安裝與使用
+## 📥 安裝
 
-*(這裡加入安裝和使用的說明)*
+**安裝依賴**:
+```bash
+pip install pandas ortools argparse
+```
+
+## 📖 使用範例
+
+在使用前，您可以透過以下檔案進行設定：
+
+- `machine_specs.json`：設定機台的寬幅規格。
+- `order.xlsx`：設定訂單的英寸寬幅數量。
+- `stocks_width.xlsx`：設定庫存的英寸寬幅。
+
+執行範例：
+
+```bash
+python main.py --cpu 4 --max_time 60
+```
+## 🖼️ 優化結果展示
+
+```markdown
+> Bin capacity:  {'lb': 128, 'ub': 129}
+> predict_reels : 24
+> Solution 0, time = 0.62 s, objective = 13
+> APS:
+>    base_wei  width1  width2  width3  width4  width5  unit  total        remark  quantity
+> 0       NaN    43.0    43.0    43.0     NaN     NaN  inch  129.0                       1
+> 1       NaN    43.0    36.0    25.0    25.0     NaN  inch  129.0                       1
+> 2       NaN    43.0    34.0    27.0    25.0     NaN  inch  129.0                       1
+> 3       NaN    36.0    36.0    32.0    25.0     NaN  inch  129.0                       2
+> 4       NaN    36.0    34.0    34.0    25.0     NaN  inch  129.0                       1
+> 5       NaN    36.0    31.0    31.0    31.0     NaN  inch  129.0                       3
+> 6       NaN    34.0    34.0    34.0    26.0     NaN  inch  128.0  stock:[26.0]         1
+> 7       NaN    32.0    32.0    32.0    32.0     NaN  inch  128.0                       1
+> 8       NaN    27.0    27.0    27.0    27.0    21.0  inch  129.0  stock:[21.0]         1
+> 9       NaN    27.0    27.0    25.0    25.0    25.0  inch  129.0  stock:[25.0]         1
+
+> APS to json format...
+```markdown
 
 ## ⚠️ 目前版本注意事項
 
