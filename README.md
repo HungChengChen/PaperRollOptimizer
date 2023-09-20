@@ -64,7 +64,7 @@ python main.py --cpu 4 --max_time 60
 > 9       NaN    27.0    27.0    25.0    25.0    25.0  inch  129.0  stock:[25.0]         1
 
 > APS to json format...
-```markdown
+```
 
 ## ⚠️ 目前版本注意事項
 
