@@ -8,7 +8,7 @@
 
 ## 🌟 簡介
 
-**PaperRoll_Optimizer** 是為造紙廠度身打造的 Cutting Stock Problem (CSP) 解決方案。此工具致力於從固定尺寸的紙卷中最大化裁剪效率，同時確保符合客戶的訂單需求。
+**PaperRoll_Optimizer** 是為造紙廠量身打造的 Cutting Stock Problem (CSP) 解決方案。此工具致力於從固定尺寸的紙卷中最大化裁剪效率，同時確保符合客戶的訂單需求。
 
 在造紙廠的日常運營中，如何從原料紙漿製作固定尺寸的大捲筒，並根據訂單需求精確裁剪，始終是一大挑戰。`PaperRoll_Optimizer` 旨在解決此問題，確保每次裁剪都能最大化資源利用並最小化浪費。
 
