@@ -1,5 +1,11 @@
 # 🌀 PaperRoll_Optimizer
 
+<p align="center">
+  <img src="doc/image/so31dk0x.png" alt="" width="50%">
+  <br>
+  <i>智能化造紙生產流程(Image generated using DALL·E-3 by OpenAI.)</i>
+</p>
+
 ## 🌟 簡介
 
 **PaperRoll_Optimizer** 是為造紙廠度身打造的 Cutting Stock Problem (CSP) 解決方案。此工具致力於從固定尺寸的紙卷中最大化裁剪效率，同時確保符合客戶的訂單需求。
@@ -27,6 +33,7 @@
 ## 📥 安裝
 
 **安裝依賴**:
+
 ```bash
 pip install pandas ortools argparse
 ```
@@ -46,24 +53,25 @@ pip install pandas ortools argparse
 ```bash
 python main.py --cpu 4 --max_time 60
 ```
+
 ## 🖼️ 優化結果展示
 
 ```markdown
-> Bin capacity:  {'lb': 128, 'ub': 129}
+> Bin capacity: {'lb': 128, 'ub': 129}
 > predict_reels : 24
 > Solution 0, time = 0.62 s, objective = 13
 > APS:
->    base_wei  width1  width2  width3  width4  width5  unit  total        remark  quantity
-> 0       NaN    43.0    43.0    43.0     NaN     NaN  inch  129.0                       1
-> 1       NaN    43.0    36.0    25.0    25.0     NaN  inch  129.0                       1
-> 2       NaN    43.0    34.0    27.0    25.0     NaN  inch  129.0                       1
-> 3       NaN    36.0    36.0    32.0    25.0     NaN  inch  129.0                       2
-> 4       NaN    36.0    34.0    34.0    25.0     NaN  inch  129.0                       1
-> 5       NaN    36.0    31.0    31.0    31.0     NaN  inch  129.0                       3
-> 6       NaN    34.0    34.0    34.0    26.0     NaN  inch  128.0  stock:[26.0]         1
-> 7       NaN    32.0    32.0    32.0    32.0     NaN  inch  128.0                       1
-> 8       NaN    27.0    27.0    27.0    27.0    21.0  inch  129.0  stock:[21.0]         1
-> 9       NaN    27.0    27.0    25.0    25.0    25.0  inch  129.0  stock:[25.0]         1
+> base_wei width1 width2 width3 width4 width5 unit total remark quantity
+> 0 NaN 43.0 43.0 43.0 NaN NaN inch 129.0 1
+> 1 NaN 43.0 36.0 25.0 25.0 NaN inch 129.0 1
+> 2 NaN 43.0 34.0 27.0 25.0 NaN inch 129.0 1
+> 3 NaN 36.0 36.0 32.0 25.0 NaN inch 129.0 2
+> 4 NaN 36.0 34.0 34.0 25.0 NaN inch 129.0 1
+> 5 NaN 36.0 31.0 31.0 31.0 NaN inch 129.0 3
+> 6 NaN 34.0 34.0 34.0 26.0 NaN inch 128.0 stock:[26.0] 1
+> 7 NaN 32.0 32.0 32.0 32.0 NaN inch 128.0 1
+> 8 NaN 27.0 27.0 27.0 27.0 21.0 inch 129.0 stock:[21.0] 1
+> 9 NaN 27.0 27.0 25.0 25.0 25.0 inch 129.0 stock:[25.0] 1
 
 > APS to json format...
 ```
@@ -71,6 +79,7 @@ python main.py --cpu 4 --max_time 60
 ## ⚠️ 目前版本注意事項
 
 目前本版關閉以下功能，僅供教學參考使用：
+
 - 選擇機台功能
 - 選擇單位功能
 - 建立多樣的庫存尺吋表
